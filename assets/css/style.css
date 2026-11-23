@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    font: 16px system-ui, Arial;
+    background: #f3f5f8;
+    color: #18202b
+}
+
+header {
+    background: #2d5997;
+    color: white;
+    padding: 18px 5%;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    align-items: center
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px
+}
+
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px
+}
+
+h1 {
+    font-size: 28px
+}
+
+form, .panel {
+    background: #fff;
+    padding: 22px;
+    border-radius: 12px;
+    margin: 15px 0;
+    box-shadow: 0 2px 12px #0001
+}
+
+label {
+    display: block;
+    margin: 12px 0 5px
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #cbd3dd;
+    border-radius: 7px;
+    width: 100%;
+    max-width: 440px
+}
+
+button, .btn {
+    display: inline-block;
+    background: #2d5997;
+    color: #fff;
+    border: 0;
+    border-radius: 7px;
+    padding: 11px 16px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 12px
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff
+}
+
+th, td {
+    padding: 12px;
+    border-bottom: 1px solid #e1e5eb;
+    text-align: left
+}
+
+table {
+    display: block;
+    overflow-x: auto
+}
+
+th {
+    background: #e9edf5
+}
+
+.error {
+    color: #a51616
+}
+
+.success {
+    color: #116a35
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px
+}
+
+.cards .panel {
+    margin: 0
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #687281
+}
+
+@media print {
+    header, footer, form, .no-print {
+        display: none !important
+    }
+
+    body {
+        background: white
+    }
+
+    main {
+        max-width: none
+    }
+}
+
+nav {
+    align-items: center;
+}
+
+nav .form-sair {
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+}
+
+nav .form-sair button {
+    margin: 0;
+    padding: 4px 8px;
+    font: inherit;
+    font-size: 14px;
+}
